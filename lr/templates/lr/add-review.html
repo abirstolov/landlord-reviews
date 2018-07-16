@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <style>
+    .gray-bg {
+      background-color:ivory;
+    }
+  </style>
+  <title>Landlord reviews - Add a review</title>
+</head>
+
+<body>
+  <div class="bs-component">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between">
+      <a class="navbar-brand" href="#">Landlord reviews</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <!-- <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul> -->
+
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn btn-success my-2 my-sm-0" type="submit">Add review</button>
+        </form>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Abir
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">Profile</button>
+            <button class="dropdown-item" type="button">Sign out</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+  </div>
+
+  <main>
+    <div class="jumbotron">
+      <div class="container">
+        <form>
+          <div class="form-group">
+            <h1>Add a Review</h1>
+            Start by giving your review a title (70 chars max)
+            <input type="text" name="title">
+            * * * * * - average rating (calculated)
+            <h3>Property</h3>
+            <input type="text" name="property_text" placeholder="tell us a little about the property">
+            <h3>Landlord</h3>
+            <input type="text" name="landlord_text" placeholder="Tell us about your landlord">
+
+            <h3>Landlord name</h3>
+            <input type="text" name="landlord_first" placeholder="first name">
+            <input type="text" name="landlord_last" placeholder="last name">
+            <input type="number" name="landlord_id" placeholder="ID">
+            <h3>Address</h3>
+            <input type="text" name="address" placeholder="Address">
+            <input type="text" name="city" placeholder="City">
+            <input type="date" name="moved_in" placeholder="Date moved in">
+            <input type="date" name="moved_out" placeholder="Date moved out">
+            <input type="checkbox" name="is_still_tenant" placeholder="Is still tenent">
+            Note: It is advised to leave a review after the contact is over and complete (which can be a while after the contact end date)
+
+            <input type="number" name="rent" placeholder="Rent per month">
+            Occupancy types are: Roomate, Apartment
+            <input type="text" name="occupancy_type" placeholder="Occupancy_type">
+           
+          </div>
+        </form>
+        
+        <hr>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="container-fluid gray-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md">
+          <h5>Legal</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="text-muted" href="#">Acceptable use policy</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">take-down policy</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">Terms and conditions</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">Privacy</a>
+            </li>
+            <li>
+              <a class="text-muted" href="#">Note to landlords</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="text-muted" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
