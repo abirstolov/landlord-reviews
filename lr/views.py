@@ -12,3 +12,10 @@ def terms(request):
 
 def add_review(request):
     return render(request, 'lr/add-review.html')
+
+def add_review_post(request):
+    print(request.POST['summary'])
+    return HttpResponseRedirect(reverse('lr:review-added'))
+
+def review_added(request):
+    return render(request, 'lr/review-added.html')
