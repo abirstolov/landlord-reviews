@@ -3,6 +3,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.http import Http404
 from django.urls import reverse
 
+from .models import TenentForm
+
 # Create your views here.
 def index(request):
     return render(request, 'lr/index.html')
@@ -19,3 +21,13 @@ def add_review_post(request):
 
 def review_added(request):
     return render(request, 'lr/review-added.html')
+
+def add_tenent(request):
+    if request.method == 'POST':
+        form = TenentForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect(reverse('lr:review-added'))
+    else:
+        form = TenentForm()
+    return render(request, 'lr/add-tenent.html', {'form': form})

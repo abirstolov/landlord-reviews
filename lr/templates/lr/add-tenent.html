@@ -1,0 +1,20 @@
+{% extends "lr/base.html" %}
+
+{% block title %}
+Add a review
+{% endblock title %}
+
+{% block content %}
+<form action="{% url 'lr:add-tenent' %}" method="post">
+  {% csrf_token %}
+  <div class="form-group">
+    <h1>Add a Tenent</h1>
+    
+    {{form}}
+
+    <input type="submit" value="Add">
+  </div>
+</form>
+
+<hr>
+{% endblock content %}
